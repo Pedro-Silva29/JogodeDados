@@ -1,0 +1,106 @@
+/* define as cores utilizadas */
+:root {
+    --cor-primaria: #06E87B;
+    --cor-secundaria: #f0f0f0;
+  }
+  
+  /* estiliza o body */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-secundaria);
+  }
+  
+  /* estiliza o container principal */
+  #container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* estiliza o título principal */
+  h1 {
+    text-align: center;
+    color: var(--cor-primaria);
+  }
+  
+  /* estiliza o dado */
+  #dado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  /* estiliza as divs dentro do dado */
+  #resultadojogador1, #resultadojogador2, #x {
+    flex: 1;
+    text-align: center;
+  }
+  
+  #x {
+    font-size: 30px;
+    color: var(--cor-primaria);
+  }
+  
+  /* estiliza os botões */
+  #botoes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: coral;
+  }
+  
+  /* estiliza o placar */
+  #placar {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  #placar h2 {
+    margin-top: 0;
+    color: var(--cor-primaria);
+    text-align: center;
+  }
+  
+  #pontos {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* estiliza cada ponto do placar */
+  #ponto-jg1, #ponto-jg2 {
+    font-size: 20px;
+    color: var(--cor-primaria);
+  }
+  #rodadas {
+    color: blue;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #numeroderodadas {
+    color: blue;
+    font-size: 24px;
+    font-weight: bold;
+  }
